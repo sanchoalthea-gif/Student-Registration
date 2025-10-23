@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="student.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lapu-Lapu City College</h1>
+    <h2>Student Registration Form</h2>
+
+    <form id="registrationForm">
+      <label for="fullname">Full Name:</label>
+      <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+      <label for="course">Course:</label>
+      <select id="course" name="course" required>
+        <option value="">--Select Course--</option>
+        <option value="BSHM">BSHM</option>
+        <option value="BSTM">BSTM</option>
+        <option value="BEEd">BEEd</option>
+        <option value="BSEd">BSEd</option>
+        <option value="BIT">BIT</option>
+      </select>
+
+      <label for="yearLevel">Year Level:</label>
+      <select id="yearLevel" name="yearLevel" required>
+        <option value="">--Select Year Level--</option>
+        <option value="1st Year">1st Year</option>
+        <option value="2nd Year">2nd Year</option>
+        <option value="3rd Year">3rd Year</option>
+        <option value="4th Year">4th Year</option>
+      </select>
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" required min="15">
+
+      <button type="submit">Register</button>
+    </form>
+
+    <p id="message"></p>
+  </div>
+
+  <script src="student.js"></script>
+</body>
+</html>

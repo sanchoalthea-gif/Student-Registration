@@ -1,0 +1,106 @@
+/* === Cream & Brown (Classic & Poetic) === */
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #fcf5e5; /* soft cream background */
+  color: #3f3a3a; /* classic brown-gray text */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  background-color: #fffdf6; /* light cream container */
+  padding: 35px;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 4px 12px rgba(124, 106, 70, 0.25); /* soft brownish shadow */
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  color: #7c6a46; /* warm brown heading */
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  text-align: center;
+  color: #a68a64; /* quote or subheading accent */
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+/* Labels */
+label {
+  display: block;
+  margin-top: 16px;
+  font-weight: bold;
+  text-align: left;
+  margin-bottom: 6px;
+  color: #7c6a46;
+}
+
+/* Input Fields & Select */
+input, select, textarea {
+  width: 95%;
+  padding: 10px;
+  border: 1px solid #d6c9a7;
+  border-radius: 8px;
+  outline: none;
+  background-color: #fffdf6;
+  color: #3f3a3a;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  font-family: 'Georgia', serif;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: #a68a64; /* highlight brown accent */
+  box-shadow: 0 0 5px rgba(166, 138, 100, 0.4);
+}
+
+/* Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #8b7355; /* deep brown button */
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  font-family: 'Georgia', serif;
+}
+
+button:hover {
+  background-color: #7c6a46; /* slightly darker brown */
+  transform: scale(1.02);
+}
+
+/* Message */
+#message {
+  text-align: center;
+  font-size: 17px;  
+  margin-top: 25px;
+  color: #a68a64; /* quote accent color */
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 25px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+}
